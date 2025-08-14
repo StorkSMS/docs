@@ -35,7 +35,20 @@ p, span, div, a {
   font-family: var(--font-family-primary) !important;
 }
 
-/* GitBook-style header styling removed - using default */
+/* Top navbar styling - just the very top bar */
+nav[role="navigation"],
+.top-bar,
+[data-testid="topbar"],
+.mintlify-topbar {
+  background-color: #3388FF !important;
+}
+
+/* Target the top navigation bar specifically */
+body > nav,
+.fixed.top-0,
+.z-50 {
+  background-color: #3388FF !important;
+}
 
 /* GitBook-style sidebar */
 .mintlify-sidebar {
