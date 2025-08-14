@@ -50,7 +50,7 @@ body > nav,
   background-color: #3388FF !important;
 }
 
-/* Search area styling - broad targeting that was working before */
+/* Search area styling - aggressive and broad targeting */
 .search-container,
 .search-input,
 .search-box,
@@ -60,10 +60,18 @@ input[type="search"],
 .search-trigger,
 button[class*="search"],
 div[class*="search"],
-.bg-gray-100,
-.bg-gray-200,
-.bg-gray-300,
-[class*="bg-gray"] {
+header .bg-gray-100,
+header .bg-gray-200,
+header .bg-gray-300,
+nav .bg-gray-100,
+nav .bg-gray-200,
+nav .bg-gray-300,
+.top-bar .bg-gray-100,
+.top-bar .bg-gray-200,
+.top-bar .bg-gray-300,
+header [class*="bg-gray"],
+nav [class*="bg-gray"],
+.top-bar [class*="bg-gray"] {
   background-color: white !important;
   color: #6B7280 !important;
   border: 1px solid #ddd !important;
@@ -143,6 +151,7 @@ nav a[href*="mailto"]:hover,
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
+  transform: none !important;
 }
 
 /* Logo size styling */
@@ -166,31 +175,44 @@ img[src*="logo" i] {
   height: auto !important;
 }
 
-/* GitBook-style sidebar - flat design */
+/* GitBook-style sidebar - completely flat design */
 .mintlify-sidebar,
 aside,
-[data-testid="sidebar"] {
+[data-testid="sidebar"],
+.sidebar {
   background-color: var(--color-background) !important;
   border-right: 1px solid var(--color-border);
 }
 
-/* Remove bubbled/rounded styling from sidebar items */
+/* Remove ALL bubbled/rounded styling from sidebar */
 .mintlify-sidebar *,
 aside *,
-[data-testid="sidebar"] * {
+[data-testid="sidebar"] *,
+.sidebar * {
   background-color: inherit !important;
   border-radius: 0 !important;
   box-shadow: none !important;
 }
 
-/* Specifically target sidebar navigation items */
-.mintlify-sidebar .bg-gray-100,
-.mintlify-sidebar .bg-gray-200,
-.mintlify-sidebar [class*="bg-gray"],
+/* Aggressively target all rounded elements in sidebar */
 .mintlify-sidebar [class*="rounded"],
+.mintlify-sidebar [class*="bg-gray"],
 aside [class*="rounded"],
-nav[class*="sidebar"] [class*="rounded"] {
+aside [class*="bg-gray"],
+[data-testid="sidebar"] [class*="rounded"],
+[data-testid="sidebar"] [class*="bg-gray"] {
   background-color: inherit !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Force flat sidebar items */
+.mintlify-sidebar li,
+.mintlify-sidebar a,
+.mintlify-sidebar button,
+aside li,
+aside a,
+aside button {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
