@@ -1,0 +1,221 @@
+/* Custom font loading for Helvetica Neue Medium */
+@font-face {
+  font-family: 'HelveticaNeueMedium';
+  src: url('./HelveticaNeueMedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* GitBook-style global typography */
+:root {
+  --color-primary: #3388FF;
+  --color-primary-light: #5BA3FF;
+  --color-primary-dark: #2266CC;
+  --color-background: #FFFFFF;
+  --color-background-dark: #0D1117;
+  --color-text: #1F2937;
+  --color-text-light: #6B7280;
+  --color-border: #E5E7EB;
+  --font-family-primary: 'HelveticaNeueMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Apply custom font globally */
+body, 
+.mintlify-root,
+.min-h-screen,
+h1, h2, h3, h4, h5, h6,
+p, span, div, a {
+  font-family: var(--font-family-primary) !important;
+}
+
+/* GitBook-style header styling */
+.mintlify-navigation {
+  background-color: var(--color-primary) !important;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* GitBook-style sidebar */
+.mintlify-sidebar {
+  background-color: var(--color-background) !important;
+  border-right: 1px solid var(--color-border);
+}
+
+/* GitBook-style content area */
+.mintlify-content {
+  font-family: var(--font-family-primary) !important;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* GitBook-style headings */
+.mintlify-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.mintlify-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.mintlify-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+}
+
+/* GitBook-style links */
+.mintlify-content a {
+  color: var(--color-primary) !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.mintlify-content a:hover {
+  border-bottom-color: var(--color-primary);
+}
+
+/* GitBook-style code blocks */
+.mintlify-content pre {
+  background-color: #F8F9FA !important;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+}
+
+.mintlify-content code {
+  background-color: #F8F9FA;
+  color: #E11D48;
+  padding: 0.125rem 0.25rem;
+  border-radius: 4px;
+  font-size: 0.875em;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+}
+
+/* GitBook-style lists */
+.mintlify-content ul, 
+.mintlify-content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.mintlify-content li {
+  margin: 0.5rem 0;
+  line-height: 1.7;
+}
+
+/* GitBook-style blockquotes */
+.mintlify-content blockquote {
+  border-left: 4px solid var(--color-primary);
+  background-color: #F8F9FA;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* GitBook-style tables */
+.mintlify-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mintlify-content th,
+.mintlify-content td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mintlify-content th {
+  background-color: #F8F9FA;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #0D1117;
+    --color-text: #F9FAFB;
+    --color-text-light: #9CA3AF;
+    --color-border: #374151;
+  }
+  
+  .mintlify-content pre,
+  .mintlify-content code {
+    background-color: #1F2937 !important;
+    color: #F59E0B;
+  }
+  
+  .mintlify-content blockquote {
+    background-color: #1F2937;
+  }
+  
+  .mintlify-content th {
+    background-color: #1F2937;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mintlify-content h1 {
+    font-size: 2rem;
+  }
+  
+  .mintlify-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .mintlify-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Custom components styling to match GitBook */
+.callout {
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.callout-info {
+  background-color: #EBF8FF;
+  border-left-color: #3182CE;
+  color: #2A4365;
+}
+
+.callout-warning {
+  background-color: #FFFBEB;
+  border-left-color: #D69E2E;
+  color: #744210;
+}
+
+.callout-danger {
+  background-color: #FED7D7;
+  border-left-color: #E53E3E;
+  color: #742A2A;
+}
+
+.callout-success {
+  background-color: #F0FFF4;
+  border-left-color: #38A169;
+  color: #22543D;
+}

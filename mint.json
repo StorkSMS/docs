@@ -7,14 +7,18 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#9945FF",
-    "light": "#14F195",
-    "dark": "#9945FF"
+    "primary": "#3388FF",
+    "light": "#5BA3FF", 
+    "dark": "#2266CC",
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#0D1117"
+    }
   },
-  "theme": "prism",
-  "layout": "topnav",
+  "theme": "gitbook",
+  "layout": "sidenav",
   "font": {
-    "family": "Helvetica Neue, Helvetica, Arial, sans-serif"
+    "family": "HelveticaNeueMedium, Helvetica Neue, Helvetica, Arial, sans-serif"
   },
   "topbarLinks": [
     {
@@ -122,5 +126,6 @@
   "footerSocials": {
     "x": "https://x.com/storksms",
     "github": "https://github.com/storksms"
-  }
+  },
+  "customCSS": "/custom.css"
 }
