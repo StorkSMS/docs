@@ -107,6 +107,27 @@ a[class*="cta"]:hover {
   color: #2266CC !important;
 }
 
+/* Logo size styling */
+.logo,
+.logo img,
+[data-testid="logo"],
+.navbar-logo,
+.topbar-logo,
+img[alt*="logo" i],
+img[src*="logo" i] {
+  width: auto !important;
+  height: 48px !important;
+  max-height: 48px !important;
+  min-height: 40px !important;
+}
+
+/* Ensure logo container doesn't constrain size */
+.logo-container,
+.navbar-logo-container {
+  width: auto !important;
+  height: auto !important;
+}
+
 /* GitBook-style sidebar */
 .mintlify-sidebar {
   background-color: var(--color-background) !important;
