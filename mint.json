@@ -17,6 +17,10 @@
     "background": {
       "light": "#FFFFFF",
       "dark": "#0D1117"
+    },
+    "anchors": {
+      "from": "#3388FF",
+      "to": "#5BA3FF"
     }
   },
   "theme": "venus",
@@ -31,7 +35,7 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "dApp",
+    "name": "Launch Dapp",
     "url": "https://dapp.stork-sms.net"
   },
   "navigation": [

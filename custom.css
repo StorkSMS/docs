@@ -86,7 +86,12 @@ header [class*="text-gray"],
 .top-bar [class*="text-gray"],
 nav input,
 header input,
-.top-bar input {
+.top-bar input,
+/* Override specific grey color */
+*[style*="#727477"],
+*[style*="727477"],
+[class*="text-slate"],
+[class*="text-neutral"] {
   background-color: white !important;
   color: #333333 !important;
   border: 1px solid #ddd !important;
