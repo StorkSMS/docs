@@ -35,39 +35,7 @@ p, span, div, a {
   font-family: var(--font-family-primary) !important;
 }
 
-/* GitBook-style header styling */
-.mintlify-navigation,
-.mintlify-topbar,
-nav[role="banner"],
-header,
-.top-navigation,
-.navbar,
-.topbar {
-  background-color: #3388FF !important;
-  border-bottom: 1px solid var(--color-border);
-}
-
-/* More specific selectors for Mintlify header */
-[data-theme] .top-navigation,
-[data-theme] .navbar,
-[data-theme] header {
-  background-color: #3388FF !important;
-}
-
-/* Mintlify specific header targeting */
-.mint-nav,
-.mint-topbar,
-.mint-header,
-[class*="topbar"],
-[class*="navbar"],
-[class*="navigation"]:not([class*="sidebar"]) {
-  background-color: #3388FF !important;
-}
-
-/* Override Tailwind utility classes for header */
-.bg-primary {
-  background-color: #3388FF !important;
-}
+/* GitBook-style header styling removed - using default */
 
 /* GitBook-style sidebar */
 .mintlify-sidebar {
