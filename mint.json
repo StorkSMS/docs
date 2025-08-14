@@ -15,7 +15,7 @@
       "dark": "#0D1117"
     }
   },
-  "theme": "gitbook",
+  "theme": "quill",
   "layout": "sidenav",
   "font": {
     "family": "HelveticaNeueMedium, Helvetica Neue, Helvetica, Arial, sans-serif"
