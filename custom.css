@@ -65,8 +65,15 @@ div[class*="search"],
 .bg-gray-300,
 [class*="bg-gray"] {
   background-color: white !important;
-  color: #333 !important;
+  color: #6B7280 !important;
   border: 1px solid #ddd !important;
+}
+
+/* Search placeholder text */
+input[type="search"]::placeholder,
+.cmdk-input::placeholder,
+.search-input::placeholder {
+  color: #6B7280 !important;
 }
 
 /* AI Chat section */
@@ -77,15 +84,15 @@ button[class*="ai"],
 div[class*="ai"],
 .ask-ai {
   background-color: white !important;
-  color: #333 !important;
+  color: #6B7280 !important;
   border: 1px solid #ddd !important;
 }
 
-/* All grey backgrounds in navbar */
-nav *[class*="gray"],
-nav *[class*="slate"],
-nav *.bg-neutral,
-nav *.bg-stone {
+/* Only target grey backgrounds in TOP navbar, not sidebar */
+nav.fixed *[class*="gray"],
+nav.fixed *[class*="slate"],
+nav.fixed *.bg-neutral,
+nav.fixed *.bg-stone {
   background-color: white !important;
 }
 
@@ -112,44 +119,27 @@ nav *.bg-stone {
   background-color: #f5f5f5 !important;
 }
 
-/* Launch App Button styling - white background with blue text */
-.topbar-cta,
-[data-testid="cta-button"],
-.cta-button,
-button[class*="cta"],
-a[class*="cta"],
-nav button,
+/* Launch App Button and Support - remove white backgrounds */
 nav a[href*="dapp"],
-.primary-button,
-.btn-primary,
-button[class*="primary"],
-a[class*="primary"],
-.bg-primary,
-button.bg-blue,
-a.bg-blue {
-  background-color: white !important;
-  color: #3388FF !important;
-  border: 1px solid #3388FF !important;
+nav a[href*="support"],
+nav a[href*="mailto"],
+.topbar-cta,
+[data-testid="cta-button"] {
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
   font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
 }
 
-.topbar-cta:hover,
-[data-testid="cta-button"]:hover,
-.cta-button:hover,
-button[class*="cta"]:hover,
-a[class*="cta"]:hover,
-nav button:hover,
 nav a[href*="dapp"]:hover,
-.primary-button:hover,
-.btn-primary:hover,
-button[class*="primary"]:hover,
-a[class*="primary"]:hover,
-.bg-primary:hover,
-button.bg-blue:hover,
-a.bg-blue:hover {
-  background-color: #f8f9fa !important;
-  color: #2266CC !important;
-  border: 1px solid #2266CC !important;
+nav a[href*="support"]:hover,
+nav a[href*="mailto"]:hover,
+.topbar-cta:hover,
+[data-testid="cta-button"]:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
 }
 
 /* Logo size styling */
@@ -173,10 +163,23 @@ img[src*="logo" i] {
   height: auto !important;
 }
 
-/* GitBook-style sidebar */
+/* GitBook-style sidebar - restore normal styling */
 .mintlify-sidebar {
   background-color: var(--color-background) !important;
   border-right: 1px solid var(--color-border);
+}
+
+/* Ensure sidebar elements keep their normal colors */
+.mintlify-sidebar *,
+aside *,
+[data-testid="sidebar"] * {
+  background-color: inherit !important;
+}
+
+.mintlify-sidebar .bg-gray-100,
+.mintlify-sidebar .bg-gray-200,
+.mintlify-sidebar [class*="bg-gray"] {
+  background-color: inherit !important;
 }
 
 /* GitBook-style content area */
