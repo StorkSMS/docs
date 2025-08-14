@@ -57,10 +57,36 @@ body > nav,
 [data-testid="search"],
 input[type="search"],
 .cmdk-input,
-.search-trigger {
+.search-trigger,
+button[class*="search"],
+div[class*="search"],
+.bg-gray-100,
+.bg-gray-200,
+.bg-gray-300,
+[class*="bg-gray"] {
   background-color: white !important;
   color: #333 !important;
   border: 1px solid #ddd !important;
+}
+
+/* AI Chat section */
+.ai-chat,
+.chat-trigger,
+[data-testid="ai"],
+button[class*="ai"],
+div[class*="ai"],
+.ask-ai {
+  background-color: white !important;
+  color: #333 !important;
+  border: 1px solid #ddd !important;
+}
+
+/* All grey backgrounds in navbar */
+nav *[class*="gray"],
+nav *[class*="slate"],
+nav *.bg-neutral,
+nav *.bg-stone {
+  background-color: white !important;
 }
 
 /* Search dropdown/results */
@@ -91,7 +117,16 @@ input[type="search"],
 [data-testid="cta-button"],
 .cta-button,
 button[class*="cta"],
-a[class*="cta"] {
+a[class*="cta"],
+nav button,
+nav a[href*="dapp"],
+.primary-button,
+.btn-primary,
+button[class*="primary"],
+a[class*="primary"],
+.bg-primary,
+button.bg-blue,
+a.bg-blue {
   background-color: white !important;
   color: #3388FF !important;
   border: 1px solid #3388FF !important;
@@ -102,9 +137,19 @@ a[class*="cta"] {
 [data-testid="cta-button"]:hover,
 .cta-button:hover,
 button[class*="cta"]:hover,
-a[class*="cta"]:hover {
+a[class*="cta"]:hover,
+nav button:hover,
+nav a[href*="dapp"]:hover,
+.primary-button:hover,
+.btn-primary:hover,
+button[class*="primary"]:hover,
+a[class*="primary"]:hover,
+.bg-primary:hover,
+button.bg-blue:hover,
+a.bg-blue:hover {
   background-color: #f8f9fa !important;
   color: #2266CC !important;
+  border: 1px solid #2266CC !important;
 }
 
 /* Logo size styling */
