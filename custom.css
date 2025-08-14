@@ -411,6 +411,7 @@ aside button {
 nav.nav-white-override,
 header.nav-white-override {
   /* Text colors - override all grey variants to white */
+  .text-gray-400,
   .text-gray-500,
   .text-gray-600, 
   .text-gray-700,
@@ -424,7 +425,9 @@ header.nav-white-override {
   .hover\:text-gray-600:hover,
   .hover\:text-gray-800:hover,
   .hover\:dark\:text-gray-200:hover,
-  .dark\:hover\:text-gray-300:hover {
+  .dark\:hover\:text-gray-300:hover,
+  .group-hover\:text-gray-600:hover,
+  .dark\:group-hover\:text-gray-300:hover {
     color: white !important;
   }
   
@@ -525,24 +528,37 @@ header,
 }
 
 /* Direct targeting of navigation text elements */
+body > div:first-child .text-gray-400,
 body > div:first-child .text-gray-500,
 body > div:first-child .text-gray-600,
 body > div:first-child .text-gray-700,
 body > div:first-child .dark\:text-gray-300,
 body > div:first-child .dark\:text-gray-400,
 body > div:first-child .dark\:text-white\/50,
+.fixed.top-0 .text-gray-400,
 .fixed.top-0 .text-gray-500,
 .fixed.top-0 .text-gray-600,
 .fixed.top-0 .text-gray-700,
 .fixed.top-0 .dark\:text-gray-300,
 .fixed.top-0 .dark\:text-gray-400,
 .fixed.top-0 .dark\:text-white\/50,
+nav[role="navigation"] .text-gray-400,
 nav[role="navigation"] .text-gray-500,
 nav[role="navigation"] .text-gray-600,
 nav[role="navigation"] .text-gray-700,
 nav[role="navigation"] .dark\:text-gray-300,
 nav[role="navigation"] .dark\:text-gray-400,
 nav[role="navigation"] .dark\:text-white\/50 {
+  color: white !important;
+}
+
+/* Target hover states for dark mode toggle and other nav elements */
+body > div:first-child .group-hover\:text-gray-600:hover,
+body > div:first-child .dark\:group-hover\:text-gray-300:hover,
+.fixed.top-0 .group-hover\:text-gray-600:hover,
+.fixed.top-0 .dark\:group-hover\:text-gray-300:hover,
+nav[role="navigation"] .group-hover\:text-gray-600:hover,
+nav[role="navigation"] .dark\:group-hover\:text-gray-300:hover {
   color: white !important;
 }
 
