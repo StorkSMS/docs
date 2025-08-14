@@ -87,22 +87,22 @@
     {
       "group": "Stork AI (Coming Soon)",
       "pages": [
-        "storkai-coming-soon"
+        "storkai/storkai-coming-soon"
       ]
     },
     {
       "group": "🪂 Airdrop Program",
       "pages": [
-        "airdrop"
+        "airdrop/airdrop"
       ]
     },
     {
       "group": "Roadmap",
       "pages": [
         "roadmap/roadmap-overview",
-        "roadmap/phase-1-enhanced-messaging/index",
-        "roadmap/phase-2-gamification/index",
-        "roadmap/phase-3-enterprise/index",
+        "roadmap/phase-1-enhanced-messaging",
+        "roadmap/phase-2-gamification",
+        "roadmap/phase-3-enterprise",
         "roadmap/feature-requests"
       ]
     },
