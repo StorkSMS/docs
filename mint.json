@@ -114,10 +114,7 @@
         "roadmap/roadmap-overview",
         "roadmap/phase-1-enhanced-messaging/index",
         "roadmap/phase-2-gamification/index",
-        {
-          "page": "roadmap/phase-3-enterprise/index",
-          "title": "Phase 3: Enterprise"
-        },
+        "roadmap/phase-3-enterprise/index",
         "roadmap/feature-requests"
       ]
     },
