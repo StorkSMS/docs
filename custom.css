@@ -406,6 +406,82 @@ aside button {
   }
 }
 
+/* Navigation White Theme Override - Scoped to prevent global impact */
+.nav-white-override,
+nav.nav-white-override,
+header.nav-white-override {
+  /* Text colors - override all grey variants to white */
+  .text-gray-500,
+  .text-gray-600, 
+  .text-gray-700,
+  .dark\:text-gray-300,
+  .dark\:text-gray-400,
+  .dark\:text-white\/50 {
+    color: white !important;
+  }
+  
+  /* Hover states for text */
+  .hover\:text-gray-600:hover,
+  .hover\:text-gray-800:hover,
+  .hover\:dark\:text-gray-200:hover,
+  .dark\:hover\:text-gray-300:hover {
+    color: white !important;
+  }
+  
+  /* SVG icons using mask backgrounds */
+  .bg-gray-500,
+  .dark\:bg-gray-400,
+  .hover\:bg-gray-600:hover,
+  .dark\:hover\:bg-gray-300:hover {
+    background-color: white !important;
+  }
+  
+  /* Border colors with appropriate opacity */
+  .border-gray-500\/5 {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+  }
+  .dark\:border-gray-300\/\[0\.06\] {
+    border-color: rgba(255, 255, 255, 0.06) !important;
+  }
+  
+  /* Ring colors for focus states */
+  .ring-gray-400\/20 {
+    --tw-ring-color: rgba(255, 255, 255, 0.2) !important;
+  }
+  .hover\:ring-gray-600\/25:hover {
+    --tw-ring-color: rgba(255, 255, 255, 0.25) !important;
+  }
+  .dark\:ring-gray-600\/30 {
+    --tw-ring-color: rgba(255, 255, 255, 0.3) !important;
+  }
+  .dark\:hover\:ring-gray-500\/30:hover {
+    --tw-ring-color: rgba(255, 255, 255, 0.3) !important;
+  }
+  
+  /* Ensure existing white colors remain white */
+  .text-white,
+  .text-white\/90 {
+    color: white !important;
+  }
+}
+
+/* Apply white theme to top navigation elements specifically */
+body > nav.nav-white-override,
+.fixed.top-0.nav-white-override,
+header.nav-white-override,
+.mintlify-topbar.nav-white-override {
+  /* All text inside should be white */
+  color: white !important;
+}
+
+/* Target common navigation element patterns that might need white text */
+.nav-white-override span,
+.nav-white-override div,
+.nav-white-override a:not([class*="primary"]):not([class*="cta"]),
+.nav-white-override button:not([class*="primary"]):not([class*="cta"]) {
+  color: white !important;
+}
+
 /* Custom components styling to match GitBook */
 .callout {
   padding: 1rem 1.5rem;
@@ -436,4 +512,65 @@ aside button {
   background-color: #F0FFF4;
   border-left-color: #38A169;
   color: #22543D;
+}
+
+/* Auto-apply navigation white theme using CSS selectors */
+/* Target the top navigation bar elements directly without needing JS */
+body > div:first-child,
+.fixed.top-0,
+nav[role="navigation"],
+header,
+.mintlify-topbar {
+  /* Apply white text overrides directly to navigation containers */
+}
+
+/* Direct targeting of navigation text elements */
+body > div:first-child .text-gray-500,
+body > div:first-child .text-gray-600,
+body > div:first-child .text-gray-700,
+body > div:first-child .dark\:text-gray-300,
+body > div:first-child .dark\:text-gray-400,
+body > div:first-child .dark\:text-white\/50,
+.fixed.top-0 .text-gray-500,
+.fixed.top-0 .text-gray-600,
+.fixed.top-0 .text-gray-700,
+.fixed.top-0 .dark\:text-gray-300,
+.fixed.top-0 .dark\:text-gray-400,
+.fixed.top-0 .dark\:text-white\/50,
+nav[role="navigation"] .text-gray-500,
+nav[role="navigation"] .text-gray-600,
+nav[role="navigation"] .text-gray-700,
+nav[role="navigation"] .dark\:text-gray-300,
+nav[role="navigation"] .dark\:text-gray-400,
+nav[role="navigation"] .dark\:text-white\/50 {
+  color: white !important;
+}
+
+/* Direct targeting of navigation SVG/icon elements */
+body > div:first-child .bg-gray-500,
+body > div:first-child .dark\:bg-gray-400,
+.fixed.top-0 .bg-gray-500,
+.fixed.top-0 .dark\:bg-gray-400,
+nav[role="navigation"] .bg-gray-500,
+nav[role="navigation"] .dark\:bg-gray-400 {
+  background-color: white !important;
+}
+
+/* Direct targeting of navigation borders and rings */
+body > div:first-child .border-gray-500\/5,
+body > div:first-child .dark\:border-gray-300\/\[0\.06\],
+.fixed.top-0 .border-gray-500\/5,
+.fixed.top-0 .dark\:border-gray-300\/\[0\.06\],
+nav[role="navigation"] .border-gray-500\/5,
+nav[role="navigation"] .dark\:border-gray-300\/\[0\.06\] {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+body > div:first-child .ring-gray-400\/20,
+body > div:first-child .dark\:ring-gray-600\/30,
+.fixed.top-0 .ring-gray-400\/20,
+.fixed.top-0 .dark\:ring-gray-600\/30,
+nav[role="navigation"] .ring-gray-400\/20,
+nav[role="navigation"] .dark\:ring-gray-600\/30 {
+  --tw-ring-color: rgba(255, 255, 255, 0.2) !important;
 }
