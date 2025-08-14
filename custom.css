@@ -50,20 +50,20 @@ body > nav,
   background-color: #3388FF !important;
 }
 
-/* Search area styling - make everything white */
-.search-container,
-.search-input,
-.search-box,
-[data-testid="search"],
-input[type="search"],
-.cmdk-input,
-.search-trigger,
-button[class*="search"],
-div[class*="search"],
-.bg-gray-100,
-.bg-gray-200,
-.bg-gray-300,
-[class*="bg-gray"] {
+/* Search area styling - make everything white, but only in navbar */
+nav .search-container,
+nav .search-input,
+nav .search-box,
+nav [data-testid="search"],
+nav input[type="search"],
+nav .cmdk-input,
+nav .search-trigger,
+nav button[class*="search"],
+nav div[class*="search"],
+nav .bg-gray-100,
+nav .bg-gray-200,
+nav .bg-gray-300,
+nav [class*="bg-gray"] {
   background-color: white !important;
   color: #6B7280 !important;
   border: 1px solid #ddd !important;
@@ -76,13 +76,13 @@ input[type="search"]::placeholder,
   color: #6B7280 !important;
 }
 
-/* AI Chat section */
-.ai-chat,
-.chat-trigger,
-[data-testid="ai"],
-button[class*="ai"],
-div[class*="ai"],
-.ask-ai {
+/* AI Chat section - only in navbar */
+nav .ai-chat,
+nav .chat-trigger,
+nav [data-testid="ai"],
+nav button[class*="ai"],
+nav div[class*="ai"],
+nav .ask-ai {
   background-color: white !important;
   color: #6B7280 !important;
   border: 1px solid #ddd !important;
@@ -140,6 +140,9 @@ nav a[href*="mailto"]:hover,
 [data-testid="cta-button"]:hover {
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 /* Logo size styling */
@@ -163,23 +166,33 @@ img[src*="logo" i] {
   height: auto !important;
 }
 
-/* GitBook-style sidebar - restore normal styling */
-.mintlify-sidebar {
+/* GitBook-style sidebar - flat design */
+.mintlify-sidebar,
+aside,
+[data-testid="sidebar"] {
   background-color: var(--color-background) !important;
   border-right: 1px solid var(--color-border);
 }
 
-/* Ensure sidebar elements keep their normal colors */
+/* Remove bubbled/rounded styling from sidebar items */
 .mintlify-sidebar *,
 aside *,
 [data-testid="sidebar"] * {
   background-color: inherit !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
+/* Specifically target sidebar navigation items */
 .mintlify-sidebar .bg-gray-100,
 .mintlify-sidebar .bg-gray-200,
-.mintlify-sidebar [class*="bg-gray"] {
+.mintlify-sidebar [class*="bg-gray"],
+.mintlify-sidebar [class*="rounded"],
+aside [class*="rounded"],
+nav[class*="sidebar"] [class*="rounded"] {
   background-color: inherit !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 /* GitBook-style content area */

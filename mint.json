@@ -107,11 +107,15 @@
       ]
     },
     {
-      "group": "Other",
+      "group": "Stork AI (Coming Soon)",
       "pages": [
-        "storkai-coming-soon",
-        "airdrop",
-        "ANDROID_APP_GUIDE"
+        "storkai-coming-soon"
+      ]
+    },
+    {
+      "group": "🪂 Airdrop Program",
+      "pages": [
+        "airdrop"
       ]
     },
     {
