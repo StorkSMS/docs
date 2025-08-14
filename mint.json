@@ -6,6 +6,10 @@
     "light": "/docs-images/logo.avif"
   },
   "favicon": "/stork-logo.svg",
+  "metadata": {
+    "og:image": "/docs-images/web-preview.png",
+    "twitter:image": "/docs-images/web-preview.png"
+  },
   "colors": {
     "primary": "#3388FF",
     "light": "#5BA3FF", 
