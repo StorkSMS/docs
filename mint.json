@@ -1,13 +1,26 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "$schema": "https://mintlify.com/schema.json",
   "name": "Stork SMS Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#9945FF",
     "light": "#14F195",
     "dark": "#9945FF"
   },
-  "favicon": "/favicon.svg",
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@storksms.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Launch App",
+    "url": "https://app.storksms.com"
+  },
   "navigation": [
     {
       "group": "Introduction",
@@ -101,39 +114,8 @@
       ]
     }
   ],
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@storksms.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Launch App",
-      "href": "https://app.storksms.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/storksms",
-      "github": "https://github.com/storksms"
-    }
+  "footerSocials": {
+    "x": "https://x.com/storksms",
+    "github": "https://github.com/storksms"
   }
 }
