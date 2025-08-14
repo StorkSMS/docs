@@ -92,28 +92,6 @@ header input,
 *[style*="727477"],
 [class*="text-slate"],
 [class*="text-neutral"],
-/* FORCE white text ONLY in navbar - specific targeting */
-body > nav *,
-body > header *,
-nav.fixed *,
-header.fixed *,
-.fixed.top-0.z-50 *,
-[data-testid="topbar"] *,
-.mintlify-topbar * {
-  color: white !important;
-  fill: white !important;
-  stroke: white !important;
-}
-
-/* Restore normal text color for page content */
-main *,
-.mintlify-content *,
-article *,
-[role="main"] * {
-  color: var(--color-text) !important;
-  fill: currentColor !important;
-  stroke: currentColor !important;
-}
 
 /* Remove boxes/borders around search and AI buttons */
 nav #search-bar-entry,
