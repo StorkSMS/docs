@@ -92,34 +92,12 @@ header input,
 *[style*="727477"],
 [class*="text-slate"],
 [class*="text-neutral"],
-/* Target ONLY navbar search and AI button text classes */
-nav #search-bar-entry,
-nav #search-bar-entry .text-gray-500,
-nav #search-bar-entry .text-gray-700,
-nav #search-bar-entry svg,
-nav #search-bar-entry .truncate,
-nav #assistant-entry,
-nav #assistant-entry .text-gray-500,
-nav #assistant-entry .text-gray-700,
-nav #assistant-entry svg,
-nav #assistant-entry span,
-header #search-bar-entry,
-header #search-bar-entry .text-gray-500,
-header #search-bar-entry .text-gray-700,
-header #search-bar-entry svg,
-header #search-bar-entry .truncate,
-header #assistant-entry,
-header #assistant-entry .text-gray-500,
-header #assistant-entry .text-gray-700,
-header #assistant-entry svg,
-header #assistant-entry span,
-/* Target theme toggle and other navbar icons */
-nav svg.text-gray-400,
-nav .text-gray-400,
-header svg.text-gray-400,
-header .text-gray-400,
-nav .h-4.w-4.text-gray-400,
-header .h-4.w-4.text-gray-400 {
+/* FORCE white text in navbar - very aggressive targeting */
+body nav *,
+body header *,
+.fixed.top-0 *,
+[data-testid="topbar"] *,
+.mintlify-topbar * {
   color: white !important;
   fill: white !important;
   stroke: white !important;
