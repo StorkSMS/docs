@@ -97,16 +97,6 @@
       ]
     },
     {
-      "group": "Roadmap",
-      "pages": [
-        "roadmap/roadmap-overview",
-        "roadmap/phase-1-enhanced-messaging/index",
-        "roadmap/phase-2-gamification/index",
-        "roadmap/phase-3-enterprise/index",
-        "roadmap/feature-requests"
-      ]
-    },
-    {
       "group": "Stork AI (Coming Soon)",
       "pages": [
         "storkai-coming-soon"
@@ -116,6 +106,19 @@
       "group": "🪂 Airdrop Program",
       "pages": [
         "airdrop"
+      ]
+    },
+    {
+      "group": "Roadmap",
+      "pages": [
+        "roadmap/roadmap-overview",
+        "roadmap/phase-1-enhanced-messaging/index",
+        "roadmap/phase-2-gamification/index",
+        {
+          "page": "roadmap/phase-3-enterprise/index",
+          "title": "Phase 3: Enterprise"
+        },
+        "roadmap/feature-requests"
       ]
     },
     {

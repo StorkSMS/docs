@@ -50,24 +50,20 @@ body > nav,
   background-color: #3388FF !important;
 }
 
-/* Search area styling - aggressive targeting for navbar */
-header *[class*="search"],
-nav *[class*="search"],
-.top-bar *[class*="search"],
-.topbar *[class*="search"],
-.navbar *[class*="search"],
-header input,
-nav input,
-header button,
-nav button,
-header .bg-gray-100,
-header .bg-gray-200,
-header .bg-gray-300,
-nav .bg-gray-100,
-nav .bg-gray-200,
-nav .bg-gray-300,
-header [class*="bg-gray"],
-nav [class*="bg-gray"] {
+/* Search area styling - broad targeting that was working before */
+.search-container,
+.search-input,
+.search-box,
+[data-testid="search"],
+input[type="search"],
+.cmdk-input,
+.search-trigger,
+button[class*="search"],
+div[class*="search"],
+.bg-gray-100,
+.bg-gray-200,
+.bg-gray-300,
+[class*="bg-gray"] {
   background-color: white !important;
   color: #6B7280 !important;
   border: 1px solid #ddd !important;
@@ -80,20 +76,13 @@ input[type="search"]::placeholder,
   color: #6B7280 !important;
 }
 
-/* AI Chat section - aggressive targeting */
-header *[class*="ai"],
-nav *[class*="ai"],
-.top-bar *[class*="ai"],
-.topbar *[class*="ai"],
-.navbar *[class*="ai"],
-header *[data-testid*="ai"],
-nav *[data-testid*="ai"],
-header .ask-ai,
-nav .ask-ai,
-header [aria-label*="AI"],
-nav [aria-label*="AI"],
-header [title*="AI"],
-nav [title*="AI"] {
+/* AI Chat section - broad targeting that was working before */
+.ai-chat,
+.chat-trigger,
+[data-testid="ai"],
+button[class*="ai"],
+div[class*="ai"],
+.ask-ai {
   background-color: white !important;
   color: #6B7280 !important;
   border: 1px solid #ddd !important;
