@@ -11,6 +11,11 @@
     "light": "#14F195",
     "dark": "#9945FF"
   },
+  "theme": "prism",
+  "layout": "topnav",
+  "font": {
+    "family": "Helvetica Neue, Helvetica, Arial, sans-serif"
+  },
   "topbarLinks": [
     {
       "name": "Support",
