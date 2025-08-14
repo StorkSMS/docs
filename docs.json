@@ -1,93 +1,106 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Stork SMS Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#9945FF",
+    "light": "#14F195",
+    "dark": "#9945FF"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
+  "navigation": [
+    {
+      "group": "Introduction",
+      "pages": [
+        "introduction"
+      ]
+    },
+    {
+      "group": "Getting Started",
+      "pages": [
+        "getting-started/prerequisites",
+        "getting-started/quick-start",
+        "getting-started/interface-guide",
+        "getting-started/solana-seeker"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "features/index",
+        "features/messaging-types",
+        "features/real-time-features",
+        "features/user-interface"
+      ]
+    },
+    {
+      "group": "Security",
+      "pages": [
+        "security/index",
+        "security/wallet-authentication",
+        "security/nft-access-control",
+        "security/end-to-end-encryption",
+        "security/security-measures",
+        "security/privacy-features"
+      ]
+    },
+    {
+      "group": "NFT System",
+      "pages": [
+        "nft-system/how-nft-creation-works",
+        "nft-system/nft-specifications",
+        "nft-system/nft-benefits",
+        "nft-system/cost-structure"
+      ]
+    },
+    {
+      "group": "Technical",
+      "pages": [
+        "technical/architecture-overview",
+        "technical/technology-stack",
+        "technical/database-schema",
+        "technical/performance"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/api-overview",
+        "api-reference/authentication",
+        "api-reference/message-endpoints",
+        "api-reference/chat-endpoints",
+        "api-reference/media-endpoints",
+        "api-reference/nft-endpoints",
+        "api-reference/rate-limits"
+      ]
+    },
+    {
+      "group": "Roadmap",
+      "pages": [
+        "roadmap/roadmap-overview",
+        "roadmap/phase-1-enhanced-messaging/index",
+        "roadmap/phase-2-gamification/index",
+        "roadmap/phase-3-enterprise",
+        "roadmap/feature-requests"
+      ]
+    },
+    {
+      "group": "Other",
+      "pages": [
+        "storkai-coming-soon",
+        "airdrop",
+        "ANDROID_APP_GUIDE"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/faq",
+        "resources/troubleshooting",
+        "resources/contact-and-support"
       ]
     }
-  },
+  ],
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -96,13 +109,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@storksms.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Launch App",
+      "href": "https://app.storksms.com"
     }
   },
   "contextual": {
@@ -119,9 +132,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/storksms",
+      "github": "https://github.com/storksms"
     }
   }
 }
