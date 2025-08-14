@@ -18,6 +18,12 @@
   --color-text-light: #6B7280;
   --color-border: #E5E7EB;
   --font-family-primary: 'HelveticaNeueMedium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
+  /* Override Mintlify CSS variables */
+  --primary: #3388FF;
+  --primary-rgb: 51, 136, 255;
+  --background-light: #FFFFFF;
+  --background-dark: #0D1117;
 }
 
 /* Apply custom font globally */
@@ -30,9 +36,37 @@ p, span, div, a {
 }
 
 /* GitBook-style header styling */
-.mintlify-navigation {
+.mintlify-navigation,
+.mintlify-topbar,
+nav[role="banner"],
+header,
+.top-navigation,
+.navbar,
+.topbar {
   background-color: #3388FF !important;
   border-bottom: 1px solid var(--color-border);
+}
+
+/* More specific selectors for Mintlify header */
+[data-theme] .top-navigation,
+[data-theme] .navbar,
+[data-theme] header {
+  background-color: #3388FF !important;
+}
+
+/* Mintlify specific header targeting */
+.mint-nav,
+.mint-topbar,
+.mint-header,
+[class*="topbar"],
+[class*="navbar"],
+[class*="navigation"]:not([class*="sidebar"]) {
+  background-color: #3388FF !important;
+}
+
+/* Override Tailwind utility classes for header */
+.bg-primary {
+  background-color: #3388FF !important;
 }
 
 /* GitBook-style sidebar */

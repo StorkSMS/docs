@@ -23,12 +23,12 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@storksms.com"
+      "url": "mailto:info@stork-sms.net"
     }
   ],
   "topbarCtaButton": {
     "name": "Launch App",
-    "url": "https://app.storksms.com"
+    "url": "https://dapp.stork-sms.net"
   },
   "navigation": [
     {
