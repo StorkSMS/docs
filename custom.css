@@ -92,22 +92,48 @@ header input,
 *[style*="727477"],
 [class*="text-slate"],
 [class*="text-neutral"],
-/* Target specific search and AI button text classes */
-.text-gray-500,
-.text-gray-700,
-.dark\:text-gray-400,
-.dark\:text-white\/50,
-#search-bar-entry .text-gray-500,
-#search-bar-entry .text-gray-700,
-#search-bar-entry svg,
-#search-bar-entry .truncate,
-#assistant-entry .text-gray-500,
-#assistant-entry .text-gray-700,
-#assistant-entry svg,
-#assistant-entry span {
+/* Target ONLY navbar search and AI button text classes */
+nav #search-bar-entry,
+nav #search-bar-entry .text-gray-500,
+nav #search-bar-entry .text-gray-700,
+nav #search-bar-entry svg,
+nav #search-bar-entry .truncate,
+nav #assistant-entry,
+nav #assistant-entry .text-gray-500,
+nav #assistant-entry .text-gray-700,
+nav #assistant-entry svg,
+nav #assistant-entry span,
+header #search-bar-entry,
+header #search-bar-entry .text-gray-500,
+header #search-bar-entry .text-gray-700,
+header #search-bar-entry svg,
+header #search-bar-entry .truncate,
+header #assistant-entry,
+header #assistant-entry .text-gray-500,
+header #assistant-entry .text-gray-700,
+header #assistant-entry svg,
+header #assistant-entry span,
+/* Target theme toggle and other navbar icons */
+nav svg.text-gray-400,
+nav .text-gray-400,
+header svg.text-gray-400,
+header .text-gray-400,
+nav .h-4.w-4.text-gray-400,
+header .h-4.w-4.text-gray-400 {
   color: white !important;
   fill: white !important;
   stroke: white !important;
+}
+
+/* Remove boxes/borders around search and AI buttons */
+nav #search-bar-entry,
+nav #assistant-entry,
+header #search-bar-entry,
+header #assistant-entry {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  ring: none !important;
 }
 
 /* Search placeholder text */
