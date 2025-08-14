@@ -50,19 +50,23 @@ body > nav,
   background-color: #3388FF !important;
 }
 
-/* Search area styling - make everything white, but only in navbar */
-nav .search-container,
-nav .search-input,
-nav .search-box,
-nav [data-testid="search"],
-nav input[type="search"],
-nav .cmdk-input,
-nav .search-trigger,
-nav button[class*="search"],
-nav div[class*="search"],
+/* Search area styling - aggressive targeting for navbar */
+header *[class*="search"],
+nav *[class*="search"],
+.top-bar *[class*="search"],
+.topbar *[class*="search"],
+.navbar *[class*="search"],
+header input,
+nav input,
+header button,
+nav button,
+header .bg-gray-100,
+header .bg-gray-200,
+header .bg-gray-300,
 nav .bg-gray-100,
 nav .bg-gray-200,
 nav .bg-gray-300,
+header [class*="bg-gray"],
 nav [class*="bg-gray"] {
   background-color: white !important;
   color: #6B7280 !important;
@@ -76,13 +80,20 @@ input[type="search"]::placeholder,
   color: #6B7280 !important;
 }
 
-/* AI Chat section - only in navbar */
-nav .ai-chat,
-nav .chat-trigger,
-nav [data-testid="ai"],
-nav button[class*="ai"],
-nav div[class*="ai"],
-nav .ask-ai {
+/* AI Chat section - aggressive targeting */
+header *[class*="ai"],
+nav *[class*="ai"],
+.top-bar *[class*="ai"],
+.topbar *[class*="ai"],
+.navbar *[class*="ai"],
+header *[data-testid*="ai"],
+nav *[data-testid*="ai"],
+header .ask-ai,
+nav .ask-ai,
+header [aria-label*="AI"],
+nav [aria-label*="AI"],
+header [title*="AI"],
+nav [title*="AI"] {
   background-color: white !important;
   color: #6B7280 !important;
   border: 1px solid #ddd !important;
