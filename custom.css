@@ -127,7 +127,7 @@ nav.fixed *.bg-stone {
   background-color: #f5f5f5 !important;
 }
 
-/* Launch App Button - clean styling */
+/* Launch App Button - clean styling with matching radius */
 nav a[href*="dapp"],
 nav a[href*="support"],
 nav a[href*="mailto"],
@@ -141,9 +141,11 @@ nav a[href*="mailto"],
   transition: background-color 0.2s ease !important;
   box-shadow: none !important;
   outline: none !important;
+  border-radius: 6px !important;
+  padding: 8px 12px !important;
 }
 
-/* Launch App Button Hover - simple and clean */
+/* Launch App Button Hover - matching radius */
 nav a[href*="dapp"]:hover,
 nav a[href*="support"]:hover,
 nav a[href*="mailto"]:hover,
@@ -155,6 +157,7 @@ nav a[href*="mailto"]:hover,
   box-shadow: none !important;
   outline: none !important;
   transform: none !important;
+  border-radius: 6px !important;
 }
 
 /* Logo size styling */
