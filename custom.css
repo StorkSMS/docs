@@ -91,10 +91,23 @@ header input,
 *[style*="#727477"],
 *[style*="727477"],
 [class*="text-slate"],
-[class*="text-neutral"] {
-  background-color: white !important;
-  color: #333333 !important;
-  border: 1px solid #ddd !important;
+[class*="text-neutral"],
+/* Target specific search and AI button text classes */
+.text-gray-500,
+.text-gray-700,
+.dark\:text-gray-400,
+.dark\:text-white\/50,
+#search-bar-entry .text-gray-500,
+#search-bar-entry .text-gray-700,
+#search-bar-entry svg,
+#search-bar-entry .truncate,
+#assistant-entry .text-gray-500,
+#assistant-entry .text-gray-700,
+#assistant-entry svg,
+#assistant-entry span {
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
 }
 
 /* Search placeholder text */
