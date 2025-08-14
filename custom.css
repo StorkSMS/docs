@@ -71,9 +71,16 @@ nav .bg-gray-300,
 .top-bar .bg-gray-300,
 header [class*="bg-gray"],
 nav [class*="bg-gray"],
-.top-bar [class*="bg-gray"] {
+.top-bar [class*="bg-gray"],
+/* Additional search element targeting */
+nav [class*="text-gray"],
+header [class*="text-gray"],
+.top-bar [class*="text-gray"],
+nav input,
+header input,
+.top-bar input {
   background-color: white !important;
-  color: #6B7280 !important;
+  color: #333333 !important;
   border: 1px solid #ddd !important;
 }
 
@@ -81,18 +88,25 @@ nav [class*="bg-gray"],
 input[type="search"]::placeholder,
 .cmdk-input::placeholder,
 .search-input::placeholder {
-  color: #6B7280 !important;
+  color: #666666 !important;
 }
 
-/* AI Chat section - broad targeting that was working before */
+/* AI Chat section - broad targeting with improved visibility */
 .ai-chat,
 .chat-trigger,
 [data-testid="ai"],
 button[class*="ai"],
 div[class*="ai"],
-.ask-ai {
+.ask-ai,
+/* Additional AI element targeting */
+nav [class*="ai"],
+header [class*="ai"],
+.top-bar [class*="ai"],
+nav button[class*="text-gray"],
+header button[class*="text-gray"],
+.top-bar button[class*="text-gray"] {
   background-color: white !important;
-  color: #6B7280 !important;
+  color: #333333 !important;
   border: 1px solid #ddd !important;
 }
 

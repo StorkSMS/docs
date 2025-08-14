@@ -85,18 +85,6 @@
       ]
     },
     {
-      "group": "API Reference",
-      "pages": [
-        "api-reference/api-overview",
-        "api-reference/authentication",
-        "api-reference/message-endpoints",
-        "api-reference/chat-endpoints",
-        "api-reference/media-endpoints",
-        "api-reference/nft-endpoints",
-        "api-reference/rate-limits"
-      ]
-    },
-    {
       "group": "Stork AI (Coming Soon)",
       "pages": [
         "storkai-coming-soon"
